@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Secure Notes</string>
+    <string name="register">Register</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="already_registered">Already Registered ?</string>
+    <string name="login_here">Login Here</string>
+    <string name="click_here_register">Register Here</string>
+    <string name="click_here_login">LogIn Here</string>
+    <string name="log_in">Log In</string>
+    <string name="not_registered">Not Registered ?</string>
+    <string name="secure_notes">Secure Notes</string>
+    <string name="end_to_end_encryption">End-To-End Encrypted</string>
+    <string name="enter_topic_here">Topic</string>
+    <string name="enter_subject_here">Subject</string>
+    <string name="my_notes">My notes</string>
+    <string name="topic">Topic : </string>
+    <string name="subject">Subject : </string>
+    <string name="topic1">Topic</string>
+    <string name="delete">Delete</string>
+    <string name="signout">SignOut</string>
+    <string name="about_developer">About Developer</string>
+    <string name="hii_i_m_swapnil_andhare">Hii , I\'m Swapnil Andhare.</string>
+    <string name="about">Final year M.sc(Computer Science) Student at Computer Science Department,Pune University.</string>
+    <string name="email_id">swapnilandhare608@gmail.com</string>
+    <string name="edit">Edit</string>
+    <string name="nothing_to_show">Nothing To Show..Try adding new note</string>
+    <string name="about_app">About App</string>
+    <string name="aboutapp">This app uses encryption to store the data into database.</string>
+</resources>
