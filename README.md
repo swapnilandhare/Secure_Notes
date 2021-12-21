@@ -9,7 +9,7 @@
 
 
 ## Database
-* Firebase Database
+* Firebase RealTime Database
 
 
 ## Authentication
