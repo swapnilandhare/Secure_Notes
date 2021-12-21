@@ -17,6 +17,26 @@
 
 
 ## Screens
+### Launch Screen
+![](https://github.com/swapnilandhare/Secure_Notes/blob/master/launch_screen.jpg)
+
+
+### Registration Screen
+![](https://github.com/swapnilandhare/Secure_Notes/blob/master/Registration_Screen.jpg)
+
+
+### Log In Screen
+![](https://github.com/swapnilandhare/Secure_Notes/blob/master/login_screen.jpg)
+
+
+### Main Screen
+![](https://github.com/swapnilandhare/Secure_Notes/blob/master/main_screen.jpg)
+
+
+### Add_Update Screen
+![](https://github.com/swapnilandhare/Secure_Notes/blob/master/add_update_screen.jpg)
+
+
 
 
 
