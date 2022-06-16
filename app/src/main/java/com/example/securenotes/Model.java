@@ -3,7 +3,6 @@ package com.example.securenotes;
 import com.google.firebase.database.Exclude;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.scottyab.aescrypt.AESCrypt;
 
 import java.security.GeneralSecurityException;
 
