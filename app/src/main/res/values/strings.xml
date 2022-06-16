@@ -20,11 +20,12 @@
     <string name="delete">Delete</string>
     <string name="signout">SignOut</string>
     <string name="about_developer">About Developer</string>
-    <string name="hii_i_m_swapnil_andhare">Hii , I\'m Swapnil Andhare.</string>
+    <string name="hii_i_m_swapnil_andhare">Swapnil Andhare.</string>
     <string name="about">Final year M.sc(Computer Science) Student at Computer Science Department,Pune University.</string>
     <string name="email_id">swapnilandhare608@gmail.com</string>
     <string name="edit">Edit</string>
     <string name="nothing_to_show">Nothing To Show..Try adding new note</string>
     <string name="about_app">About App</string>
-    <string name="aboutapp">This app uses encryption to store the data into database.</string>
+    <string name="aboutapp">This app is based on cryptography.This is the final year project which basically focuses on users data security and privacy using AES Encryption Decryption algorithm.</string>
+    <string name="Designed_and_Developed_by">Designed and Developed by</string>
 </resources>
