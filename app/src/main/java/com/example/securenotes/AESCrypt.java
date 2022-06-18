@@ -36,7 +36,6 @@ public final class AESCrypt {
         digest.update(bytes, 0, bytes.length);
         byte[] key = digest.digest();
 
-        log("SHA-256 key ", key);
 
         SecretKeySpec secretKeySpec = new SecretKeySpec(key, "AES");
         return secretKeySpec;
@@ -50,13 +49,11 @@ public final class AESCrypt {
         try {
             final SecretKeySpec key = generateKey(password);
 
-            log("message", message);
 
             byte[] cipherText = encrypt(key, ivBytes, message.getBytes(CHARSET));
 
             //NO_WRAP is important as was getting \n at the end
             String encoded = Base64.encodeToString(cipherText, Base64.NO_WRAP);
-            log("Base64.NO_WRAP", encoded);
             return encoded;
         } catch (UnsupportedEncodingException e) {
             if (DEBUG_LOG_ENABLED)
@@ -74,7 +71,6 @@ public final class AESCrypt {
         cipher.init(Cipher.ENCRYPT_MODE, key, ivSpec);
         byte[] cipherText = cipher.doFinal(message);
 
-        log("cipherText", cipherText);
 
         return cipherText;
     }
@@ -87,15 +83,11 @@ public final class AESCrypt {
         try {
             final SecretKeySpec key = generateKey(password);
 
-            log("base64EncodedCipherText", base64EncodedCipherText);
             byte[] decodedCipherText = Base64.decode(base64EncodedCipherText, Base64.NO_WRAP);
-            log("decodedCipherText", decodedCipherText);
 
             byte[] decryptedBytes = decrypt(key, ivBytes, decodedCipherText);
 
-            log("decryptedBytes", decryptedBytes);
             String message = new String(decryptedBytes, CHARSET);
-            log("message", message);
 
 
             return message;
@@ -116,39 +108,7 @@ public final class AESCrypt {
         cipher.init(Cipher.DECRYPT_MODE, key, ivSpec);
         byte[] decryptedBytes = cipher.doFinal(decodedCipherText);
 
-        log("decryptedBytes", decryptedBytes);
 
         return decryptedBytes;
-    }
-
-
-
-
-    private static void log(String what, byte[] bytes) {
-        if (DEBUG_LOG_ENABLED)
-            Log.d(TAG, what + "[" + bytes.length + "] [" + bytesToHex(bytes) + "]");
-    }
-
-    private static void log(String what, String value) {
-        if (DEBUG_LOG_ENABLED)
-            Log.d(TAG, what + "[" + value.length() + "] [" + value + "]");
-    }
-
-
-
-    private static String bytesToHex(byte[] bytes) {
-        final char[] hexArray = {'0', '1', '2', '3', '4', '5', '6', '7', '8',
-                '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-        char[] hexChars = new char[bytes.length * 2];
-        int v;
-        for (int j = 0; j < bytes.length; j++) {
-            v = bytes[j] & 0xFF;
-            hexChars[j * 2] = hexArray[v >>> 4];
-            hexChars[j * 2 + 1] = hexArray[v & 0x0F];
-        }
-        return new String(hexChars);
-    }
-
-    private AESCrypt() {
     }
 }
