@@ -18,7 +18,7 @@
 
 ## Screens
 ### Launch Screen
-![](https://github.com/swapnilandhare/Secure_Notes/blob/master/launch_screen.jpg)
+![](https://github.com/swapnilandhare/Secure_Notes/blob/master/Launch_Screen.jpg)
 
 
 ### Registration Screen
