@@ -18,23 +18,33 @@
 
 ## Screens
 ### Launch Screen
-![](https://github.com/swapnilandhare/Secure_Notes/blob/master/Launch_Screen.jpg)
-
+<img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/Launch_Screen.jpg" width="300">
 
 ### Registration Screen
-![](https://github.com/swapnilandhare/Secure_Notes/blob/master/Registration_Screen.jpg)
+<img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/Register_User.jpg" width="300">
 
 
 ### Log In Screen
-![](https://github.com/swapnilandhare/Secure_Notes/blob/master/login_screen.jpg)
+<img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/LogIn_User.jpg" width="300">
 
 
-### Main Screen
-![](https://github.com/swapnilandhare/Secure_Notes/blob/master/main_screen.jpg)
+### Home Screen
+<img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/All_Notes.jpg" width="300">
 
+### Add Note Screen
+<img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/Add_Note.jpg" width="300">
 
-### Add_Update Screen
-![](https://github.com/swapnilandhare/Secure_Notes/blob/master/add_update_screen.jpg)
+### Notes Option Screen
+<img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/All_Notes_Options.jpg" width="300">
+
+### Update Screen
+<img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/Update_Note.jpg" width="300">
+
+### About Option Screen
+<img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/About_Options.jpg" width="300">
+
+### About Screen
+<img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/About_App.jpg" width="300">
 
 
 
