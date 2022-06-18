@@ -46,6 +46,14 @@
 ### About Screen
 <img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/About_App.jpg" width="300">
 
+### Firebase Console Users Screen
+<img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/Users.png" width="900">
+
+### Firebase Console Data Screen
+<img src="https://github.com/swapnilandhare/Secure_Notes/blob/master/data.png" width="900">
+
+
+
 
 
 
