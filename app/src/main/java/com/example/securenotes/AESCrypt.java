@@ -16,18 +16,13 @@ public final class AESCrypt {
 
     private static final String TAG = "AESCrypt";
 
-    //AESCrypt-ObjC uses CBC and PKCS7Padding
-    private static final String AES_MODE = "AES/CBC/PKCS7Padding";
+    private static final String AES_MODE = "AES/CBC/PKCS5Padding";
+
     private static final String CHARSET = "UTF-8";
 
-    //AESCrypt-ObjC uses SHA-256 (and so a 256-bit key)
     private static final String HASH_ALGORITHM = "SHA-256";
 
-    //AESCrypt-ObjC uses blank IV (not the best security, but the aim here is compatibility)
     private static final byte[] ivBytes = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-
-    //togglable log option (please turn off in live!)
-    public static boolean DEBUG_LOG_ENABLED = false;
 
 
     private static SecretKeySpec generateKey(final String password) throws NoSuchAlgorithmException, UnsupportedEncodingException {
@@ -52,12 +47,9 @@ public final class AESCrypt {
 
             byte[] cipherText = encrypt(key, ivBytes, message.getBytes(CHARSET));
 
-            //NO_WRAP is important as was getting \n at the end
             String encoded = Base64.encodeToString(cipherText, Base64.NO_WRAP);
             return encoded;
         } catch (UnsupportedEncodingException e) {
-            if (DEBUG_LOG_ENABLED)
-                Log.e(TAG, "UnsupportedEncodingException ", e);
             throw new GeneralSecurityException(e);
         }
     }
@@ -92,8 +84,6 @@ public final class AESCrypt {
 
             return message;
         } catch (UnsupportedEncodingException e) {
-            if (DEBUG_LOG_ENABLED)
-                Log.e(TAG, "UnsupportedEncodingException ", e);
 
             throw new GeneralSecurityException(e);
         }
